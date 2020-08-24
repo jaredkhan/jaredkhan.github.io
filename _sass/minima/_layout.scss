@@ -218,7 +218,7 @@
 }
 
 .post-title {
-  font-family: "Big Caslon", $base-font-family;
+  font-family: $base-display-font-family;
   @include relative-font-size(3.5);
   letter-spacing: -1px;
   line-height: 1;
