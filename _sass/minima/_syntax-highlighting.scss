@@ -5,8 +5,13 @@
   background: #fff;
   @extend %vertical-rhythm;
 
+  pre {
+    border: 3px solid $text-color;
+    border-radius: 0;
+  }
+
   .highlighter-rouge & {
-    background: #eef;
+    //background: #eef;
   }
 
   .c     { color: #998; font-style: italic } // Comment
@@ -15,7 +20,7 @@
   .o     { font-weight: bold } // Operator
   .cm    { color: #998; font-style: italic } // Comment.Multiline
   .cp    { color: #999; font-weight: bold } // Comment.Preproc
-  .c1    { color: #998; font-style: italic } // Comment.Single
+  .c1    { color: #998; font-style: italic; font-family: $base-font-family; } // Comment.Single
   .cs    { color: #999; font-weight: bold; font-style: italic } // Comment.Special
   .gd    { color: #000; background-color: #fdd } // Generic.Deleted
   .gd .x { color: #000; background-color: #faa } // Generic.Deleted.Specific
