@@ -2,7 +2,7 @@
 layout: post
 title:  "Running Mypy in Pre-commit"
 date:   2020-12-14 22:05:00 +0000
-tags: git, python
+tags: Git Python
 ---
 
 The only thing worse than not type-checking your code is thinking you are type-checking it when you aren't. 

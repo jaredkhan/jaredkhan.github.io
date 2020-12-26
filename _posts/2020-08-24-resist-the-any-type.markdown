@@ -2,7 +2,7 @@
 layout: post
 title:  "Python Typing: Resisting the Any type"
 date:   2020-08-29 16:29:00 +0100
-tags: python
+tags: Python
 ---
 
 *With typing in Python, we aim to restrict as many invalid programs as possible before they're ever run.

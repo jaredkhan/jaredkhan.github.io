@@ -2,7 +2,7 @@
 layout: post
 title:  "How Git LFS Works"
 date:   2020-10-31 18:14:00 +0000
-tags: git
+tags: Git
 ---
 
 *This post covers the mechanisms that [Git LFS (Large File Storage)](https://git-lfs.github.com) uses internally to do its job:*

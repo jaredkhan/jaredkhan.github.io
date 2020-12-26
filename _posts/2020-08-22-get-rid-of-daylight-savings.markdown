@@ -2,7 +2,7 @@
 layout: post
 title:  "Should we get rid of British Summer Time?"
 date:   2020-08-22 15:15:42 +0100
-tags: uk, policy
+tags: UK Policy
 ---
 
 *British Summer Time is the UK's rendition of the ever-controversial concept of Daylight-Saving Time (DST).
