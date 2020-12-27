@@ -62,16 +62,21 @@ To perform these three magic tricks, Git LFS needs to intercept `add`, `push` an
 For example:
 
 ```bash
-# creating an executable with the name 'git-shout'
-echo '#! /usr/local/bin/bash\necho "running custom command!"' > git-shout
+# create script named 'git-shout'
+# sidenote: this is 'heredoc' syntax
+cat << EOF > git-shout
+#! /usr/local/bin/bash
+echo "running custom command!"
+EOF
+
 chmod u+x git-shout
-# and making sure it's in the shell's PATH
+# make sure it's in the shell's PATH
 export PATH=$PATH:.
 
 git-shout
 # running custom command!
 
-# but it can also be called like this:
+# it can also be called like this:
 git shout
 # running custom command!
 ```
@@ -96,7 +101,7 @@ First, the clean and smudge actions for the filter need to be added to either th
 ```bash
 # .git/config
 
-# define a filter called 'hide-naughty-word'
+# define a 'hide-naughty-word' filter
 [filter "hide-naughty-word"]
   # define the command for this filter 
   clean = sed s/butts/b--ts/
@@ -134,12 +139,15 @@ We see that the content has been filtered in the repository but when we actually
 What if someone on our team doesn't have the filters set up properly and checks in an unfiltered file:
 
 ```bash
-
-echo "" > .gitattributes  # empty the .gitattributes file, disabling filter
+# for demonstration,
+# empty the .gitattributes file,
+# disabling the filter.
+echo "" > .gitattributes  
 echo "i like big butts and i cannot lie" > mix-a-lot2.txt
 git add mix-a-lot2.txt
-git commit -m "Add unfiltered naughty file"
-echo "*  filter=hide-naughty-words" > .gitattributes  # reinstate filter
+git commit -m "Add unfiltered file"
+# re-enable filter
+echo "*  filter=hide-naughty-words" > .gitattributes  
 git cat-file blob "HEAD:mix-a-lot2.txt"
 # i like big butts and i cannot lie
 ```
@@ -148,7 +156,7 @@ We can re-run the filters on all files and create a new commit like so:
 
 ```bash
 git add --renormalize .
-git commit -m "Run filters against all files"
+git commit -m "Run filters"
 git cat-file blob "HEAD:mix-a-lot2.txt"
 # i like big b--ts and i cannot lie
 ```
