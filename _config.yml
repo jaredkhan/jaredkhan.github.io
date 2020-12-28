@@ -22,6 +22,13 @@ title: Jared Khan
 #description: >- # this means to ignore newlines until "baseurl:"
 #  A blog by Jared Khan.
 
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      permalink: blog/:title
+
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jaredkhan
