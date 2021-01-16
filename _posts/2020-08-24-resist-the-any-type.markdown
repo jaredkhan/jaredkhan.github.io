@@ -192,7 +192,7 @@ sort_animals_by_name(not_animals)
 ```
 
 Because we specified that `AnimalType` must be a subtype of `Animal`, the type-checker allows us to use the `name` property from `Animal` within our function.
-Note that we still aren't able to use a more specific method like `pat` within the body of the `sort_animals_by_name`, since it doesn't always exist on that upper bound, `Animal`.
+Note that we still aren't able to use a more specific method like `pat` within the body of `sort_animals_by_name`, since it doesn't always exist on that upper bound, `Animal`.
 
 ### Misconceptions about scoping
 
