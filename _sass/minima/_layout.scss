@@ -288,3 +288,21 @@
     //text-decoration: none;
   }
 }
+
+figure > img {
+  max-width: 100%;
+  max-height: 30em;
+  vertical-align: middle;
+  margin: auto;
+}
+
+
+figure {
+  text-align: center;
+}
+figcaption {
+  text-align: center;
+  color: $grey-color;
+  font-style: italic;
+  padding: 0.5em;
+}
