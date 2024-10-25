@@ -48,11 +48,11 @@ Once you’ve completed your induction, climbs must be pre-booked in 2-hour slot
 
 These 2-hour sessions will cost you an eye-watering £12.50 each, the same price as entry to Rainbow Rocket just round the corner which has approximately 9x the amount of bouldering that Perse has, but no ropes. Compared to other roped centres, that’s only £1 cheaper than Milton Keynes’ Big Rock Hub (4x the size of Perse), and £4 cheaper than London’s Castle Climbing Centre (11x the size of Perse), but we might not expect anything less of the only roped climbing in the city.
 
-| Climbing Wall                      | Price per session | Max session length | Approx number of roped routes[^2] |
-| ---------------------------------- | ----------------- | ------------------ | --------------------------------- |
-| The Castle Climbing Centre, London | £16.50            | 1 day              | 380                               |
-| Big Rock Hub, Milton Keynes        | £13.50            | 1 day              | 135                               |
-| The Perse Sports Centre, Cambridge | £12.50            | 2 hours            | 35                                |
+| Climbing Wall                      | Price per session                | Max session length | Approx number of roped routes[^2] |
+| ---------------------------------- | -------------------------------- | ------------------ | --------------------------------- |
+| The Castle Climbing Centre, London | £16.50 (£14.50 when bulk-buying) | 1 day              | 380                               |
+| Big Rock Hub, Milton Keynes        | £13.50 (£12.15 when bulk-buying) | 1 day              | 135                               |
+| The Perse Sports Centre, Cambridge | £12.50                           | 2 hours            | 35                                |
 
 [^2]: Numbers gathered from these centres websites. To be honest, a more useful comparison might be the number of routes set per month at each centre, but it's a little harder to get a hold of that info
 
