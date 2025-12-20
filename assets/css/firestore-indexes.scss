@@ -1,0 +1,98 @@
+---
+# Empty frontmatter so that Jekyll processes this file
+---
+
+@charset "utf-8";
+
+// Import variables from theme
+@import "variables";
+
+.firestore-index-vis-json-editor {
+  border: 3px solid black;
+  border-radius: 0;
+}
+.cm-editor {
+  max-height: 40em;
+}
+.cm-scroller {
+  overflow: auto;
+}
+.firestore-index-vis-document-path-input {
+  border: 2px solid #bbb;
+  border-radius: 0;
+  padding: 0.5em;
+  font-size: 1.1em;
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+}
+.firestore-index-vis-label {
+  font-weight: bold;
+  display: block;
+}
+.firestore-index-vis-breakdown-bar {
+  border-radius: 0.3em;
+}
+.firestore-index-vis-breakdown-segment:not(:last-child) {
+  border-right: 3px solid white;
+}
+.firestore-index-vis-breakdown-segment {
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#firestore-vis-container td {
+  padding: 0.2em 0.5em;
+}
+#firestore-vis-container td:nth-child(2) {
+  text-align: right;
+}
+.firestore-index-vis-size-label {
+  padding-top: 1em;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+.firestore-index-vis-size-value {
+  flex-grow: 1;
+  border-bottom: 2px solid #ddd;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+#firestore-index-vis-breakdown-container ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.extra-data-free {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  height: 10em;
+  width: 10em;
+  text-align: center;
+  border: 6px solid rgb(239, 151, 49);
+  margin: 1em auto;
+  text-transform: uppercase;
+  font-family: $base-display-font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(-5deg);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 4em;
+}
+.extra-data-free-number {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: lowercase;
+}
+.extra-data-free-note {
+  font-size: 0.5em;
+  margin-top: 2em;
+  text-align: center;
+  text-transform: lowercase;
+  font-family: $base-font-family;
+  font-weight: normal;
+}

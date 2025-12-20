@@ -1,3 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+aside.warning {
+  background-color: #f9f2e0;
+  padding: 1em;
+  position: relative;
+  padding-left: 2rem;
+  &::before {
+    content: "!";
+    position: absolute;
+    left: 0.5em;
+    top: 0.3em;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    font-size: 1.7em;
+    color: #d7a00a;
+  }
+  margin-bottom: 1em;
+}
+
 .video-link {
   position: relative;
   padding-left: 1.75rem;
