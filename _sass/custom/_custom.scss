@@ -7,6 +7,7 @@ aside.warning {
   padding: 1em;
   position: relative;
   padding-left: 2rem;
+  margin-bottom: 1em;
   &::before {
     content: "!";
     position: absolute;
@@ -19,7 +20,6 @@ aside.warning {
     font-size: 1.7em;
     color: #d7a00a;
   }
-  margin-bottom: 1em;
 }
 
 .video-link {
@@ -53,6 +53,15 @@ aside.warning {
 
 .speech {
   animation: bob 6s ease-in-out infinite;
+  position: relative;
+  background: #f4f4f4;
+  border-radius: 0.4em;
+  padding: 1.5rem;
+  font-style: italic;
+  width: 50%;
+  min-width: 10rem;
+  margin-bottom: 1rem;
+  color: #6f6f6f;
 
   @keyframes bob {
     0% {
@@ -68,16 +77,6 @@ aside.warning {
       opacity: 1;
     }
   }
-
-  position: relative;
-  background: #f4f4f4;
-  border-radius: 0.4em;
-  padding: 1.5rem;
-  font-style: italic;
-  width: 50%;
-  min-width: 10rem;
-  margin-bottom: 1rem;
-  color: #6f6f6f;
 }
 
 .speech:nth-child(3n + 0) {
