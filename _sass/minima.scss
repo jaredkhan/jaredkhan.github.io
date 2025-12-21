@@ -1,9 +1,9 @@
+@use "minima/base";
+@use "minima/layout";
+@use "minima/syntax-highlighting";
+@use "custom/custom";
+
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Corben&display=swap");
 
 // Import variables
-@import "variables";
-
-// Import partials.
-@import "minima/base", "minima/layout", "minima/syntax-highlighting",
-  "custom/custom";

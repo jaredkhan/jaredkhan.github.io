@@ -1,0 +1,7 @@
+---
+# Including this file silences a deprecation warning about minima's use of @import
+---
+
+@use "sass:meta";
+
+@include meta.load-css("minima");

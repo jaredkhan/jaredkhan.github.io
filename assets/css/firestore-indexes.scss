@@ -5,7 +5,7 @@
 @charset "utf-8";
 
 // Import variables from theme
-@import "variables";
+@use "../../_sass/variables";
 
 .firestore-index-vis-json-editor {
   border: 3px solid black;
@@ -73,7 +73,7 @@
   border: 6px solid rgb(239, 151, 49);
   margin: 1em auto;
   text-transform: uppercase;
-  font-family: $base-display-font-family;
+  font-family: variables.$base-display-font-family;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +93,6 @@
   margin-top: 2em;
   text-align: center;
   text-transform: lowercase;
-  font-family: $base-font-family;
+  font-family: variables.$base-font-family;
   font-weight: normal;
 }

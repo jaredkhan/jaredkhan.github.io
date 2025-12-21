@@ -1,3 +1,5 @@
+@use "../variables";
+
 @use "sass:color";
 
 /**
@@ -27,10 +29,10 @@ figure {
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height}
-    $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
+  font: variables.$base-font-weight #{variables.$base-font-size}/#{variables.$base-line-height}
+    variables.$base-font-family;
+  color: variables.$text-color;
+  background-color: variables.$background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -59,7 +61,7 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit * 0.5;
+  margin-bottom: variables.$spacing-unit * 0.5;
 }
 
 /**
@@ -85,7 +87,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: $small-font-size;
+  font-size: variables.$small-font-size;
 }
 
 /**
@@ -93,7 +95,7 @@ figcaption {
  */
 ul,
 ol {
-  margin-left: $spacing-unit;
+  margin-left: variables.$spacing-unit;
 }
 
 li {
@@ -112,21 +114,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: $base-font-weight;
+  font-weight: variables.$base-font-weight;
 }
 
 /**
  * Links
  */
 a {
-  color: $brand-color;
+  color: variables.$brand-color;
 
   &:visited {
-    color: color.adjust($brand-color, $lightness: -15%);
+    color: color.adjust(variables.$brand-color, $lightness: -15%);
   }
 
   &:hover {
-    color: $text-color;
+    color: variables.$text-color;
     text-decoration: underline;
   }
 
@@ -143,10 +145,10 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $text-color;
-  border-left: 4px solid $grey-color-dark;
-  padding-left: $spacing-unit * 0.5;
-  @include relative-font-size(1.125);
+  color: variables.$text-color;
+  border-left: 4px solid variables.$grey-color-dark;
+  padding-left: variables.$spacing-unit * 0.5;
+  @include variables.relative-font-size(1.125);
 
   > :last-child {
     margin-bottom: 0;
@@ -158,8 +160,8 @@ blockquote {
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  @include variables.relative-font-size(0.9375);
+  border: 1px solid variables.$grey-color-light;
   border-radius: 3px;
 }
 
@@ -182,19 +184,25 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: -webkit-calc(
+    #{variables.$content-width} - (#{variables.$spacing-unit} * 2)
+  );
+  max-width: calc(
+    #{variables.$content-width} - (#{variables.$spacing-unit} * 2)
+  );
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right: variables.$spacing-unit;
+  padding-left: variables.$spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width: calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit * 0.5;
-    padding-left: $spacing-unit * 0.5;
+  @include variables.media-query(variables.$on-laptop) {
+    max-width: -webkit-calc(
+      #{variables.$content-width} - (#{variables.$spacing-unit})
+    );
+    max-width: calc(#{variables.$content-width} - (#{variables.$spacing-unit}));
+    padding-right: variables.$spacing-unit * 0.5;
+    padding-left: variables.$spacing-unit * 0.5;
   }
 }
 
@@ -215,7 +223,7 @@ pre {
   width: 16px;
   height: 16px;
   display: inline-block;
-  fill: #{$grey-color};
+  fill: #{variables.$grey-color};
   padding-right: 5px;
   vertical-align: text-top;
 }
@@ -230,21 +238,25 @@ pre {
  * Tables
  */
 table {
-  margin-bottom: $spacing-unit;
+  margin-bottom: variables.$spacing-unit;
   width: 100%;
-  text-align: $table-text-align;
-  color: color.adjust($text-color, $lightness: 18%);
+  text-align: variables.$table-text-align;
+  color: color.adjust(variables.$text-color, $lightness: 18%);
   border-collapse: collapse;
-  border: 3px solid $text-color;
+  border: 3px solid variables.$text-color;
   th,
   td {
-    padding: ($spacing-unit * 0.3333333) ($spacing-unit * 0.5);
+    padding: (variables.$spacing-unit * 0.3333333)
+      (variables.$spacing-unit * 0.5);
   }
   th {
-    border: 2px solid color.adjust($grey-color-light, $lightness: -4%);
-    border-bottom-color: color.adjust($grey-color-light, $lightness: -12%);
+    border: 2px solid color.adjust(variables.$grey-color-light, $lightness: -4%);
+    border-bottom-color: color.adjust(
+      variables.$grey-color-light,
+      $lightness: -12%
+    );
   }
   td {
-    border: 2px solid $grey-color-light;
+    border: 2px solid variables.$grey-color-light;
   }
 }
